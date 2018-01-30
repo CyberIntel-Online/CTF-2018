@@ -1,0 +1,72 @@
+WELCOME, HAVE A BLISSFUL DAY.
+
+This is Cyber-Intel Online Official CTF (Catch-The-Flag) Challenge and I am Dr. Sameera de Alwis (The Group Admin and The President of Cyber-Intel Online - Sri Lanka). I designed this challenge to get hold of most enthusiastic and skilled/knowledgeable people who wish to show and reveal their hidden dojo or abilities in the Hacking arena. This is Level - 1 challenge. Which means, this is a Basic Level of challenge and people who are willing to participate and accept the challenge should have self-confident and self-courage in the areas of hacking and other black knowledge or deep knowledge or maybe in some form of Reverse Engineering and Basic Cryptographic or Cryptanalysis knowledge.
+
+OVERVIEW OF THE CHALLENGE
+
+Source File(s): FinalDump(CyberIntelONLINE)-PCAP.zip (URL: https://drive.google.com/file/d/12pzoWn3KrAc0BPoO_3mTesD10aiJbLZ9/view?usp=sharing). This file is password protected and password is "000-infected-000". We calculated/generated the checksum hashes (the generated hashes in MD5 is (382785615A7161BFA3EC22D8ABAE83B3), SHA1 is (3D25B6F9B17FD542BDF4A3D9F8B256413F5EB8D9), and SHA-256 is (10A39597BD3FA2B3FFA78AA50CDB6B954D71D048A56017FCC7C3B89855A7D53E)) to preserve the integrity of the file. Your may verify the generated hashes by comparing them from (Ex. http://onlinemd5.com/) or you may use any other online/offline tool to verify them.
+
+The given (the file should be downloaded) (.dmp) HEX (Hexadecimal) dump file (name: FinalDump(CyberIntelONLINE)-PCAP.dmp) is the size of 598 KB (612,917 bytes) and it is created specifically with binary injected Wireshark on Microsoft Windows with WinPCAP and Tcpdump on Kali, Debian, and BSD Linux Distros with LIBCAP captured (.CAP) files. Inside this .dmp file, there are three (3) numbers of Exploit Code captures, three (3) numbers of Remote Network TCP Flagged Scan captures, one (1) number of Malware Exploit Kit Code capture, one (1) number of Win32/Worm Malware Code capture, five (5) numbers of Generic TCP/IP Remote Communication captures, and one (1) number of Trojan/OSX Malware Code capture. Those capture dumps randomly injected to a single empty file with the leading 4 NULL bytes (in HEX 00, in Binary 00000000, in Escape Code \0) and 4 ASCII (American Standard Code for Information Interchange) Mode Period "." Character (in HEX 2E, in Binary 00101110, in Escape Code \x2E) trailing characters as to keep it separate from each other capture codes. These leading and trailing characters may have random order as well.
+
+TOOLS/RESOURCE AND OTHER THINGS YOU MAY NEED
+
+- Any HEX Editor or HEX Manipulation Software
+- Crypto Analysis Software
+- Basic Cryptography Knowledge
+- Debugger/Disassembler or Any Other Reversing Tool(s)
+- Careful Analytical Knowledge
+- Virus Total Online Scanner or SheepDip Knowledge
+- Analysis and Dissecting Basic Knowledge
+- Carefulness, When You Read The Goals of The Challenge
+- Patience and Skill Set of Understanding HEX
+- Google Search Engine and You Should Know How To Handle It
+- Brain and You Must Know How To Handle and Use Your Brain Wisely
+
+LIMITATIONS
+
+There is no absolute/obvious limitation for anything in this challenge. No age group, no language restriction, no tool/software/utility or no restriction for any mechanism or method and/or no other specific restriction. This is open to everyone in this world.
+
+GOAL/TARGET OF THE CHALLENGE
+
+1. Identify the Boundary Bytes of Leading and Tailing characters which are described in "Overview of the Challenge".
+
+2. Dump the following separate resources into separate dump files (using HEX editor) which already concatenated in the single dump file.
+
+- 3 Numbers of Exploit Codes
+- 3 Numbers of Remote Network TCP Flagged Scan
+- 1 Number of Malware Exploit Kit Code
+- 1 Number of Win32/Worm Malware Code
+- 5 Numbers of Generic TCP/IP Remote Communications
+- 1 Number of Trojan/OSX Malware Code
+- Other(s) if any.
+
+3. Identify the bit/byte pattern and correctly place the Names of the dumped Exploits, Malware, Trojan, Scan Types, Malware Kit, Win32/Worm, and TCP/IP Remote Communications and state any other things found in those separate code dumps.
+
+(HINT: You may upload the separate binary/hex dumped files into Virus Total and check the names of the malware and malicious codes found and dumped in this challenge. You may also use any Anti-Malware Scanner or similar technology to identify and classify the malware forms and their names. Use only pattern analysis and signature analysis in your Anti-Malware scanner to detect and classified dumped malware and malicious codes).
+
+4. Now, you must concentrate only on "Win32/Worm Malware Code" and you should proceed further deep drill-down analysis on this code dump. In this dumped code segment, may be some specific parts of this code is encoded/encrypted with a basic cryptographic algorithm or encoding Bitwise manipulation (in other words this code maybe partially encoded or encrypted).
+
+5. Identify and Uncover (and Construct) PE (Portable Executable) Header and it's initiating 2 bytes (magic byte) header code termed as "MZ (in HEX - 4D 5A)" of the malware code.
+
+HINT: It may not be visible to the naked eye directly. Perhaps it has hidden inside the Bitwise manipulation. The possible Bitwise manipulations are Byte Flip, Inverse Bits, OR, AND, XOR, Shift Left or Shift Right, Rotate Left or Rotate Right, and Block Shift Left or Block Shift Right. You may set Operand Data Types as 8 Bit Unsigned Byte, 16 Bit Unsigned Short, 32 Bit Unsigned Long, and 64 Bit Unsigned Quad. Byte Ordering Pattern could be Little Endian (Ex. Intel) or Big Endian (Ex. Motorola). The above-mentioned hint may be useful for you to defeat the Bitwise operation if any.
+
+6. Now you must reveal a TEXT (String) of "This program cannot be run in DOS mode" from the code segment and Identify/Construct Text segment as it is in the original file.
+
+HINT: It also may not be visible to the naked eye directly. Maybe it has hidden inside the Bitwise manipulation. The possible Bitwise manipulations are Byte Flip, Inverse Bits, OR, AND, XOR, Shift Left or Shift Right, Rotate Left or Rotate Right, and Block Shift Left or Block Shift Right. You may set Operand Data Types as 8 Bit Unsigned Byte, 16 Bit Unsigned Short, 32 Bit Unsigned Long, and 64 Bit Unsigned Quad. Byte Ordering Pattern could be Little Endian (Ex. Intel) or Big Endian (Ex. Motorola). The above-mentioned hint may be useful for you to defeat the Bitwise operation if any.
+
+7. After uncovering of both MZ header and TEXT (String) Section, you must now carefully focus on "PE (in HEX 50 45)" data header inside code segment and you should be able to uncover and reconstruct those two (2) header bytes.
+
+HINT: Sometimes it has hidden inside the Bitwise or Cryptographic Algorithm based bit manipulation. The possible Bitwise or Crypto manipulations are, ANSI ASCII and IBM ASCII (different ASCII character sets), Lowercase/Uppercase Characters, EBCDIC (the IBM mainframe character set), Raw Data (Binary), Hex ASCII (hexadecimal representation of raw data as ASCII encoded text), In Counter (CTR) Mode (256-bit AES/Rijndael With SHA-256 From The 512-bit Concatenation), Motorola (ditto on =Extended Exorcisor), Intel Hex (hex ASCII data in a special format, including checksums etc. on =Extended Intellec), UUCode, Base64, and Quoted Printable. The above-mentioned hint may be useful for you to defeat the Bitwise operation if any.
+
+8. Create a point form with good briefing (you may submit it using any language) - step by step guide (point 1 to 7 in this section of the challenge) document in Microsoft Word (DOCX), Adobe Acrobat Format (PDF), or OpenOffice Writer (ODT) formatted file with the clearly visible screenshots. Every screenshot should also contain the capture of FILE OFFSET when you place screenshots of HEX manipulations. Alternatively, you may record a video file (MPEG v4. - MP4) or (Matroska - MKV) with use of x264 or x265 multimedia codecs and video should be in HD (High Definition) and should have clear view of everything what you do and how you do to resolve this challenge.
+
+Please Note: After you create the document report (PDF/DOCX/ODT) or screen video (MP4/MKV) capture file, you should compress and encrypt your generated/compiled solution file with the file compressor built-in cryptographic algorithm with the base of common password termed "999-solution-666@cyber-intel". You may use ZIP/RAR/7z and create an encrypted and compressed archive file. After creation of compressed/encrypted file, you must calculate/generate the checksum hashes (you must generate the hashes in MD5, SHA1, and SHA-256) to preserve the integrity of the file and the hashes should be saved in another file named "integrityverify-solution.hsh". For that, you may use any tool online/offline (Ex. http://onlinemd5.com/). If you created your solution in multimedia format with screen video (MP4/MKV) capture file (depending on the time and file quality), your files could be too large to upload. Please use ZIP/RAR/7z archive Splitting method in-built in file archivers to avoid such difficulty. In such occurrence, the maximum Split size should be "100 MegaBytes" and depending on the size of the raw files, multiple split archive files will generate.
+
+9. Extracted and dumped separate code samples should be compressed into a single file (file name should be "CTF(SolutionDumps)-CyberIntel2018" and encrypted with the file/data compressor built-in cryptographic algorithm with the base of common password termed "666-infected-999@cyber-intel". You may use ZIP/RAR/7z and create an encrypted and compressed archive file. After creation of compressed/encrypted file, you must calculate/generate the checksum hashes (you must generate the hashes in MD5, SHA1, and SHA-256) to preserve the integrity of the file and the hashes should be saved in another file named "integrityverify-dumps.hsh". For that, you may use any tool online/offline (Ex. http://onlinemd5.com/).
+
+10. Upload all compiled files documented report (PDF/DOCX/ODT) of the solution against the challenge or video (MP4/MKV) of the solution against the challenge, compressed dump sample (ZIP/RAR/7z), and integrity verification solution hash file (HSH). Share the URL (uploaded and shared files) with us using email (info@cyberintel.online, education@cyberintel.online, or business@cyberintel.online or share your links in the Facebook Group named "Hacking/Reverse Engineering, and Digital Forensics Challenge" of "Cyber-Intel Online Pvt Ltd (@CyberIntelOnline)" or "https://www.facebook.com/CyberIntelOnline/" as a Group Post. Please Note: The post should contain your, solution URL (shared and uploaded file), name in full, email address, residential or office address, telephone number(s), city, province, country, region, or any other information or comments or suggestions. Every personal information should be encrypted (covert mode) and post the encrypted text information along with the post and DO NOT show anything overtly (non-encrypted) form. You may use an online/offline tool (Ex. https://codebeautify.org/encrypt-decrypt) and every your personal information should be encrypted with Blowfish Algorithm by setting the Crypto Mode of CBC (Cipher Block Chaining) and you may use any key as your password to encrypt the plaintext personal information into ciphertext. The password should be emailed or send it to the Facebook Messenger privately with the true credential of you. Preferably use out PGP Public Key to safely communicate with us. You may use Online PGP Tool (Ex. https://sela.io/pgp/), Open-PGP Software for Secret Email Communication (https://www.openpgp.org/software/), or GnuPG (Privacy Guard) PGP - OpenPGP Freeware (https://www.gnupg.org/), or Symantec Encryption Desktop (Commercial). You may find the PGP Public Key of Cyber-Intel Online in "https://pastebin.com/raw/d7FSE22L".
+
+Please Note: Winners will be informed personally over the email and publish the non-confidential details of the individuals who won CTF Challenge on the official group of Cyber-Intel Online "Hacking/Reverse Engineering, and Digital Forensics Challenge" and on the wall of "https://www.facebook.com/CyberIntelOnline/".
+
+Good Luck and All the Very Best
+Team Cyber-Intel Online
